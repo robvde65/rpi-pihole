@@ -14,8 +14,8 @@ docker run -d \
     -p 67:67/udp \
     -p 80:80 \
     -p 443:443 \
-    -v "/home/pi/pihole/etc-pihole/:/etc/pihole/" \
-    -v "/home/pi/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
+    -v "/docker/pihole/etc-pihole/:/etc/pihole/" \
+    -v "/docker/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
     -e ServerIP="${IP}" \
     -e ServerIPv6="${IPv6}" \
     --restart=unless-stopped \
